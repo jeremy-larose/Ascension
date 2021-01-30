@@ -1,5 +1,4 @@
 # Changelog
-
 All notable changes to this package will be documented in this file. The format is based
 on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
@@ -114,7 +113,6 @@ on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 ## [1.4.0] - 2020-06-26
 
 ### Added
-
 - Added `ClipCaps.AutoScale` to automatically change the speed multiplier value when the clip is trimmed in the Timeline window.
 - Added a `DeleteClip` method in `TrackAsset`.
 - Added dependency on Animation, Audio, Director and Particle System
@@ -138,25 +136,21 @@ on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 - `UndoExtension` to manage undo operations with common Timeline types.
 
 ### Changed
-
 - Improved performance with ControlTracks in preview mode for cases where multiple Control Tracks are assigned to the same PlayableDirector.
 - Improved layout and appearance of track header buttons.
 - Reduced icons' file size without any quality loss.
 - A track's binding will be duplicated when pasting or duplicating a track.
 - When creating a new timeline asset, the "Timeline" suffix will not be added to the file name twice.
 - `ClipCaps.All` now includes the new `Autoscale` feature. To get the previous `ClipCaps.All` behaviour on clips, use
-
 ```
 ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMultiplier | ClipCaps.Blending
 ```
-
 - Inline curve selection is now synced with the clip's selection.
 - Selecting a curve view property will also select the corresponding curve view.
 - Clicking and holding the `Command` or `Control` key on a curve view will deselect it if it was already selected.
 - Improved Timeline window UI performance.
 
 ### Fixed
-
 - Selecting clips from locked tracks is not allowed anymore when using the playhead's context menu.
 - Inserting gaps in locked tracks is not allowed anymore.
 - When adding an Activation track, the viewport is adjusted to show the new Activation clip.
@@ -203,12 +197,10 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 ## [1.3.0] - 2020-02-26
 
 ### Added
-
 - Inline Curve Properties can be removed.
 - Tracks can be individually resized.
 
 ### Changed
-
 - Creating a new Timeline will no longer automatically add an Animation Track and an Animator to the target GameObject.
 - Ease-in and ease-out values for clips are no longer restricted to 50% of the clip's duration.
 - The resize handle for inline curves has been moved to the track header area.
@@ -264,13 +256,11 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
   positioned ([1205835](https://issuetracker.unity3d.com/product/unity/issues/guid/1205835/))
 
 ### Changed
-
 - ControlPlayableAsset.searchHierarchy (a.k.a. Control Children) now defaults to false.
 
 ## [1.2.10] - 2019-12-08
 
 ### Fixed
-
 - Fixed issue where object selectors on tracks did not show bound objects. (1202853)
 - Fixing inspector blend graph display for animation clips. (1201474)
 - Fixed Timeline Window lock state when restarting Unity and no timeline are
@@ -279,13 +269,11 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 ## [1.2.9] - 2019-12-06
 
 ### Fixed
-
 - Added missing high-resolution icons for Personal Skin.
 
 ## [1.2.8] - 2019-11-21
 
 ### Fixed
-
 - Fixed issue where recording couldn't be turned on for override tracks. (1199389)
 - Fixed overlay bug when panning. (1198348)
 - Fixed Foot IK being applied in Editor when option is
@@ -295,7 +283,6 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 ## [1.2.7] - 2019-11-15
 
 ### Fixed
-
 - Fixed inline curves to display PlayableBehaviour array properties. (1178251)
 - Fixed clip selection from playhead. (1187495)
 - Fixed recorded clips dirtying the scene on copy/paste. (1181492)
@@ -303,7 +290,6 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 ## [1.2.6] - 2019-10-25
 
 ### Added
-
 - Added Timeline manual.
 
 ## [1.2.5] - 2019-10-16
@@ -316,7 +302,6 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
   button. ([1187402](https://issuetracker.unity3d.com/product/unity/issues/guid/1187402/))
 
 ### Fixed
-
 - Fixed issue where recording couldn't be turned off when an object is deactivated. (1187174)
 - Timelines listed in the Timeline selector will now be sorted alphabetically. (1190514)
 - Fixed Insert Frames options from Trackhead context menu not applying to markers. (1187895)
@@ -350,13 +335,11 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 ## [1.2.3] - 2019-10-03
 
 ### Fixed
-
 - Removed unnecessary directories from the package.
 
 ## [1.2.2] - 2019-08-20
 
 ### Fixed
-
 - Fixed issue where fields for custom clips were not responding to Add Key commands. (1174416)
 - Fixed issue where a different track's bound GameObject is highlighted when clicking a track's bound GameObject box. (1141836)
 - Fixed issue where a clip locks to the playhead's position when moving it. (1157280)
@@ -374,7 +357,6 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 - Fixed copying clips without ExposedReferences causing the scene to dirty (1144469)
 
 ## [1.2.0] - 2019-07-16
-
 *Compatible with Unity 2019.3*
 
 ### Added
@@ -391,7 +373,6 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
   vertically, instead of zooming.
 
 ### Fixed
-
 - Fixed an issue causing info text to overlap when displaying multiple lines (1150863).
 - Fixed duration mode not reverting from "Fixed Length" to "Based On Clips" properly. (1154034)
 - Fixed playrange markers being drawn over horizontal scrollbar (1156023)
@@ -448,9 +429,7 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 - Fixed creation of override track to work with multiselection (1133592)
 
 ## [1.1.0] - 2019-02-14
-
 *Compatible with Unity 2019.2*
-
 ### Added
 
 - ClipEditor, TrackEditor and MarkerEditor classes users can derive from to control visual appearance of custom timeline clips, tracks and
@@ -466,7 +445,6 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 - ReadOnly/Source Control Lock support for Timeline Scene
 
 ### Changed
-
 - Control Track display to show a particle system icon when particle systems are being controlled
 - Animate-able Properties for clips are no longer edited using by "recording"; they are edited through the inline curves just like tracks.
 - AudioTrack properties can now be animated through inline curves.
@@ -476,7 +454,6 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 - Moved "Add Signal Emitter" and "Add Signal Emitter From Asset" commands out of their sub-menu. (1131166)
 
 ### Fixed
-
 - Fixed markers being drawn outside their pane. (1124381)
 - Fixed non-public tracks not being recognized by the Timeline Editor. (1122803)
 - Fixed keyboard shortcuts for _Frame All_ (default: A) and _Frame Selected_ (default: F) to also apply
@@ -514,9 +491,7 @@ ClipCaps.Looping | ClipCaps.Extrapolation | ClipCaps.ClipIn | ClipCaps.SpeedMult
 - Fixed EaseIn/Out shortcut for clips
 
 ## [1.0.0] - 2019-01-28
-
 *Compatible with Unity 2019.1*
-
 ### Added
 
 - This is the first release of Timeline, as a Package

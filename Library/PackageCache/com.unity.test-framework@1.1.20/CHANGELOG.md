@@ -1,7 +1,5 @@
 # Changelog
-
 ## [1.1.20] - 2020-12-04
-
 - The logscope is now available in OneTimeTearDown.
 - Fixed an issue where failing tests would not result in the correct exit code if a domain reload happens after the test has run (DS-1304).
 - If a player build fails, the test specific build settings should be cleaned up and the original values restored as intended (DS-1001).
@@ -13,7 +11,6 @@
 - Update `com.unity.ext.nunit` version to 1.0.6
 
 ## [1.1.19] - 2020-11-17
-
 - Command line runs with an inconclusive test result now exit with exit code 2 (case DS-951).
 - Fixed timeout during UnitySetUp which caoused test to pass instead of failing due to wrong time format.
 - Timeout exeption thrown when timeout time is exeded in the UnitySetup when using `WaitForSeconds(n)`.
@@ -21,11 +18,9 @@
 - Method marked with UnityTest that are not returning IEnumerator is now giving a proper error (DS-1059).
 
 ## [1.1.18] - 2020-10-07
-
 - Fixed issue of timeout during UnitySetUp which wasn't detected and allowed the test to pass instead of failing (case DSTR-21)
 
 ## [1.1.17] - 2020-10-05
-
 - Fixed an issue where the WaitForDomainReload yield instruction would sometimes let the test continue for one frame before the domain
   reload.
 - Added support for negation in filters using !. E.g. !CategoryToExclude.
@@ -38,7 +33,6 @@
 - Fixed issue on loading EditMode or Playmode test tree in the wrong tab when switching between tabs when TestRunner is loading (DS-865)
 
 ## [1.1.16] - 2020-07-09
-
 - Follow up on fix when UTF picks up on outdated compilation errors
 
 ## [1.1.15] - 2020-07-02
@@ -49,7 +43,6 @@
 - Fixed and issue when Unity Test Framework exits editor on an outdated script compilation error (during api updates)
 
 ## [1.1.14] - 2020-04-03
-
 - Added the 'assemblyNames' command line argument for filtering on the assembly level.
 - The dll and project level of the tree view should now correctly show the results when running tests in a player (case 1197026).
 - Optimize usage of player connection when transfering test results (case 1229200).
@@ -83,7 +76,6 @@
 - Respect Script Debugging build setting when running tests
 
 ## [1.1.10] - 2019-12-19
-
 - Introduced PostSuccessfulLaunchAction callback
 - Fixed an issue where canceling a UnityTest while it was running would incorrectly mark it as passed instead of canceled.
 - Added command line argument for running tests synchronously.
@@ -91,7 +83,6 @@
 - The test output pane now retains its size on domain reloads.
 
 ## [1.1.9] - 2019-12-12
-
 - Rolled back refactoring to the test run system, as it caused issues in some corner cases.
 
 ## [1.1.8] - 2019-11-15
@@ -99,25 +90,20 @@
 - Ensured that a resumed test run is continued instantly.
 
 ## [1.1.7] - 2019-11-14
-
 - Fixed an issue with test runs after domain reload.
 
 ## [1.1.6] - 2019-11-12
-
 - Building a player for test will no longer look in unrelated assemblies for relevant attributes.
 
 ## [1.1.5] - 2019-10-23
-
 - Fixed a regression to synchronous runs introduced in 1.1.4.
 
 ## [1.1.4] - 2019-10-15
-
 - Running tests in batch mode now correctly returns error code 3 (RunError) when a timeout or a build error occurs.
 - Fixed an issue where a test run in a player would time out, if the player takes longer than 10 minutes to run.
 - Added command line argument and api setting for specifying custom heartbeat timeout for running on players.
 
 ## [1.1.3] - 2019-09-23
-
 - Fixed a regression where tests in a player would report a timeout after a test run is finished.
 - Made it possible for the ui to change its test items when the test tree changes without script compilation.
 - Added synchronous runs as an option to the TestRunnerApi.
@@ -137,22 +123,18 @@
   LogAssert.Expect.
 
 ## [1.1.1] - 2019-08-07
-
 - Tests retrieved as a test list with the test runner api incorrectly showed both mode as their TestMode.
 - Fixed a compatibility issue with running tests from rider.
 
 ## [1.1.0] - 2019-07-30
-
 - Introduced the TestRunnerApi for running tests programmatically from elsewhere inside the Editor.
 - Introduced yield instructions for recompiling scripts and awaiting a domain reload in Edit Mode tests.
 - Added a button to the Test Runner UI for clearing the results.
 
 ## [1.0.18] - 2019-07-15
-
 - Included new full documentation of the test framework.
 
 ## [1.0.17] - 2019-07-11
-
 - Fixed an issue where the Test Runner window wouldn’t frame selected items after search filter is cleared.
 - Fixed a regression where playmode test application on the IOS platform would not quit after the tests are done.
 
@@ -173,7 +155,6 @@
 - Fixed an error in ConditionalIgnore, if the condition were not set.
 
 ## [1.0.14] - 2019-05-27
-
 - Fixed issue preventing scene creation in IPrebuildSetup.Setup callback when running standalone playmode tests.
 - Fixed an issue where test assemblies would sometimes not be ordered alphabetically.
 - Added module references to the package for the required modules: imgui and jsonserialize.
@@ -181,19 +162,15 @@
 - Fixed a typo in the player test window (case 1148671).
 
 ## [1.0.13] - 2019-05-07
-
 - Fixed a regression where results from the player would no longer update correctly in the UI (case 1151147).
 
 ## [1.0.12] - 2019-04-16
-
 - Added specific unity release to the package information.
 
 ## [1.0.11] - 2019-04-10
-
 - Fixed a regression from 1.0.10 where test-started events were triggered multiple times after a domain reload.
 
 ## [1.0.10] - 2019-04-08
-
 - Fixed an issue where test-started events would not be fired correctly after a test performing a domain reload (case 1141530).
 - The UI should correctly run tests inside a nested class, when that class is selected.
 - All actions should now correctly display a prefix when reporting test result. E.g. "TearDown :".
@@ -203,7 +180,6 @@
 - Fixed a regression introduced in 1.0.9 where tests with the Explicit attribute could no longer be executed.
 
 ## [1.0.9] - 2019-03-27
-
 - Fixed an issue where a corrupt instance of the test runner window would block for a new being opened.
 - Added the required modules to the list of package requirements.
 - Fixed an issue where errors would happen if the test filter ui was clicked before the ui is done loading.
@@ -212,7 +188,6 @@
 - Fixed an issue where using multiple filters on tests would sometimes give an incorrect result.
 
 ## [1.0.7] - 2019-03-12
-
 ### This is the first release of *Unity Package com.unity.test-framework*.
 
 - Migrated the test-framework from the current extension in unity.

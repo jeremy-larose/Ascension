@@ -1,16 +1,12 @@
 # Resources
-
 This directory contains the UIElements-based user interface components.
 
 ## Overview
-
 Each component is defined as its own class and file in this directory.
 
 ## Adding a New Component
-
 Each component is a C# class that extends the UiElements' VisualElement class and provides a UXML factory. If no UXML parameters are
 required/desired, a simple factory like this (taken from AlertBar) works:
-
 ```csharp
 public new class UxmlFactory : UxmlFactory<AlertBar> { }
 ```

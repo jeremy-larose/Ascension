@@ -15,7 +15,6 @@ the [Package Manager documentation](https://docs.unity3d.com/Packages/com.unity.
 The Timeline Manual can be found [here](http://docs.hq.unity3d.com/2018.1/Documentation/Manual/TimelineSection.html)
 
 # Technical details
-
 ## Requirements
 
 This version of Timeline is compatible with the following versions of the Unity Editor:

@@ -1,11 +1,8 @@
 # Unity Source Control Tests
-
 This project contains the tests for the window/UI of this collab client.
 
 ## Overview
-
 This is the structure of the project:
-
 ```none
 <root>
   ├── .tests.json
@@ -22,7 +19,6 @@ This is the structure of the project:
 Each directory features tests and mock classes for classes in the editor code.
 
 ## Tests
-
 To run the tests, use the Unity Test Runner from within the Unity Editor. Unity Test Runner documentation
 is [here](https://docs.unity3d.com/Manual/testing-editortestsrunner.html).
 
@@ -32,7 +28,6 @@ While 100% coverage is hard to achieve, tests should be added with each new feat
 
 With that out of the way, tests are in the typical C# format with a function with a `[Test]` decorator. Below is an example of a test taken
 from `Editor/Models/ChangesModelTests.cs`
-
 ```csharp
 [Test]
 public void ChangesModel_NullSourceControlEntries_EmptyResultLists()

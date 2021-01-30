@@ -1,14 +1,10 @@
 # Changelog
-
 These are the release notes for the TextMesh Pro UPM package which was first introduced with Unity 2018.1. Please see the following link for
 the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudios.com/forum/index.php?topic=1363.0
 
 ## [3.0.1] - 2020-07-26
-
 ## [2.1.1]
-
 ## [1.5.1]
-
 ### Changes
 
 - Addressed compiler warning related to the new virtual event OnPreRenderText.
@@ -27,11 +23,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   #1264596.
 
 ## [3.0.0] - 2020-06-30
-
 ## [2.1.0]
-
 ## [1.5.0]
-
 ### Changes
 
 - Added support to control if a text object is Maskable and affected by UI Mask components. The new setting is found in the Extra Settings
@@ -53,11 +46,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   TMP_Settings as these are persistent and runtime assets. Case #1251229
 
 ## [3.0.0-preview.14] - 2020-06-08
-
 ## [2.1.0-preview.14]
-
 ## [1.5.0-preview.14]
-
 ### Changes
 
 - Fixed sprite character and sprite glyph scale not being reflected in the text layout.
@@ -72,11 +62,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Fixed InvalidOperationException that could occur when changing text Overflow linked components via code. Case #1251283
 
 ## [3.0.0-preview.13] - 2020-05-22
-
 ## [2.1.0-preview.13]
-
 ## [1.5.0-preview.13]
-
 ### Changes
 
 - Fixed potential issue where the Font Asset Creator could get stuck in the packing phase of the atlas generation process.
@@ -89,11 +76,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Fixed culling issue where lossy scale was not considered in the determination of the bounds of the text geometry.
 
 ## [3.0.0-preview.12] - 2020-05-09
-
 ## [2.1.0-preview.12]
-
 ## [1.5.0-preview.12]
-
 ### Changes
 
 - Added synchronization of the RaycastTarget property of the parent &lt;TextMeshProUGUI&gt; with potential child sub text objects. Case
@@ -115,11 +99,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   #1245104
 
 ## [3.0.0-preview.11] - 2020-04-22
-
 ## [2.1.0-preview.11]
-
 ## [1.5.0-preview.11]
-
 ### Changes
 
 - Fixed incorrect culling of text object by RectMask2D component when the parent Canvas Render Mode is set to Screen Space - Camera or World
@@ -127,11 +108,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Added special handling to ForceMeshUpdate() when the parent Canvas is disabled.
 
 ## [3.0.0-preview.10] - 2020-04-21
-
 ## [2.1.0-preview.10]
-
 ## [1.5.0-preview.10]
-
 ### Changes
 
 - Revised caching of Preferred Width and Height to further reduce the amount of time it has to be recomputed when using a complex structure
@@ -172,11 +150,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Fixed mouse cursor flickering when hovering the Text Input Box of a text prefab with RTL enabled. Case #1206395
 
 ## [3.0.0-preview.8] - 2020-03-14
-
 ## [2.1.0-preview.8]
-
 ## [1.5.0-preview.8]
-
 ### Changes
 
 - Fixed a minor issue where the preferred width of a text object can be incorrect when using multiple font assets, fallbacks and sprites in
@@ -199,11 +174,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   the primary font asset.
 
 ## [3.0.0-preview.7] - 2020-03-07
-
 ## [2.1.0-preview.7]
-
 ## [1.5.0-preview.7]
-
 ### Changes
 
 - Reverted recent change to the TMP_SubMeshUI OnDisable() function that could result in a Missing Reference Exception in the
@@ -230,11 +202,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - As requested by a few users, TMP_FontAsset.faceInfo setter is now public instead of internal.
 
 ## [3.0.0-preview.5] - 2020-02-25
-
 ## [2.1.0-preview.5]
-
 ## [1.5.0-preview.5]
-
 ### Changes
 
 - Revised SetText function formatting options to including ability to specify padding for integral part of the value. Revised format is as
@@ -255,11 +224,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   #1216007
 
 ## [3.0.0-preview.4] - 2020-01-31
-
 ## [2.1.0-preview.4]
-
 ## [1.5.0-preview.4]
-
 ### Changes
 
 - Fixed Input Field issue where scrolling events could prevent OnEndEdit event from firing.
@@ -283,11 +249,8 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Added public ITextPreprocessor textPreprocessor; property to allow setting the text preprocessor for a given text component.
 
 ## [3.0.0-preview.3] - 2019-12-16
-
 ## [2.1.0-preview.3]
-
 ## [1.5.0-preview.3]
-
 ### Changes
 
 - Fixed potential issue with TMP Dropdown where calling Show() and Hide() in very short interval could result in additional Blockers. Case
@@ -324,9 +287,7 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Optimization to ensure the TMP Update Manager only rebuilds text objects once per frame regardless of the number of cameras in the scene.
 
 ## [2.1.0-preview.2] - 2019-10-30
-
 ## [1.5.0-preview.2]
-
 ### Changes
 
 - Fixed Input Field issue when Read Only flag is set preventing the initial setting of the text. Also fixed Read Only flag not being
@@ -362,9 +323,7 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   was assigned.
 
 ## [2.1.0-preview.1] - 2019-09-30
-
 ## [1.5.0-preview.1]
-
 ### Changes
 
 - Fixed an issue when using Overflow Ellipsis mode where the Ellipsis character would not be displayed correctly when the preceding
@@ -462,20 +421,15 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Fixed potential cosmetic issue in the text component inspector when using Overflow Linked mode. Case #1177640
 
 ## [1.4.1] - 2019-04-12
-
 ### Changes
-
 - Improved handling of font asset automatic upgrade to version 1.1.0 which is required to support the new Dynamic SDF system.
 - Made release compatible with .Net 3.5 scripting runtime.
 
 ## [1.4.0] - 2019-03-07
-
 ### Changes
-
 - Same release as 1.4.0-preview.3a.
 
 ## [1.4.0-preview.3a] - 2019-02-28
-
 ### Changes
 
 - Improved performance of the Project Files GUID Remapping Tool.
@@ -486,7 +440,6 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Added support for Stereo rendering to the TMP Distance Field and Mobile Distance Field shaders.
 
 ## [1.4.0-preview.2a] - 2019-02-14
-
 ### Changes
 
 - Fixed an issue with SDF Scale handling where the text object would not render correctly after the object scale had been set to zero.
@@ -507,7 +460,6 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Fixed an issue with the &ltrotate&gt tag incorrectly affecting character spacing.
 
 ## [1.4.0-preview.1] - 2019-01-30
-
 ### Changes
 
 - Renamed TMPro_FontUtilities to TMP_FontAssetCommon to more accurately reflect the content of this file.
@@ -555,9 +507,7 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Resolved a Null Reference Error that would appear when cycling through the text overflow modes. Case #1121624
 
 ## [1.3.0] - 2018-08-09
-
 ### Changes
-
 - Revamped UI to conform to Unity Human Interface Guidelines.
 - Updated the title text on the Font Asset Creator window tab to "Font Asset Creator".
 - Using TMP_Text.SetCharArray() with an empty char[] array will now clear the text.
@@ -571,14 +521,11 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   conjunction with the style tag.
 
 ## [1.2.4] - 2018-06-10
-
 ### Changes
-
 - Fixed a minor issue when using Justified and Flush alignment in conjunction with \u00A0.
 - The Font Asset creationSettings field is no longer an Editor only serialized field.
 
 ## [1.2.3] - 2018-05-29
-
 ### Changes
 
 - Added new bitmap shader with support for Custom Font Atlas texture. This shader also includes a new property "Padding" to provide control
@@ -603,7 +550,6 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   imported.
 
 ## [1.2.2] - 2018-03-28
-
 ### Changes
 
 - Calling SetAllDirty() on a TMP text component will now force a regeneration of the text object including re-parsing of the text.
@@ -630,9 +576,7 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Added new event handler to the TMP_TextEventHandler.cs script included in Example 12a to allow tracking of interactions with Sprites.
 
 ## [1.2.1] - 2018-02-14
-
 ### Changes
-
 - Package is now backwards compatible with Unity 2018.1.
 - Renamed Assembly Definitions (.asmdef) to new UPM package conventions.
 - Added DisplayName for TMP UPM package.
@@ -643,19 +587,15 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   trigger a regeneration of the text object.
 
 ## [1.2.0] - 2018-01-23
-
 ### Changes
-
 - Package version # increased to 1.2.0 which is the first release for Unity 2018.2.
 
 ## [1.1.0] - 2018-01-23
-
 ### Changes
 
 - Package version # increased to 1.1.0 which is the first release for Unity 2018.1.
 
 ## [1.0.27] - 2018-01-16
-
 ### Changes
 
 - Fixed an issue where setting the TMP_InputField.text property to null would result in an error.
@@ -666,15 +606,11 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
   the project menu.
 
 ## [1.0.26] - 2018-01-10
-
 ### Added
-
 - Removed Tizen player references in the TMP_InputField as the Tizen player is no longer supported as of Unity 2018.1.
 
 ## [1.0.25] - 2018-01-05
-
 ### Added
-
 - Fixed a minor issue with PreferredValues calculation in conjunction with using text auto-sizing.
 - Improved Kerning handling where it is now possible to define positional adjustments for the first and second glyph in the pair.
 - Renamed Kerning Info Table to Glyph Adjustment Table to better reflect the added functionality of this table.
@@ -686,7 +622,6 @@ the Release Notes for prior versions of TextMesh Pro. http://digitalnativestudio
 - Added TMP_PRESENT define as per the request of several third party asset publishers.
 
 ## [1.0.23] - 2017-11-14
-
 ### Added
 
 - New menu option added to Import Examples and additional content like Font Assets, Materials Presets, etc for TextMesh Pro. This new menu

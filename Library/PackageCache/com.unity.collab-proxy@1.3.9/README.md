@@ -1,5 +1,4 @@
 # Collaborate Client Package
-
 ![ReleaseBadge](https://badges.cds.internal.unity3d.com/packages/com.unity.collab-proxy/release-badge.svg) ![ReleaseBadge](https://badges.cds.internal.unity3d.com/packages/com.unity.collab-proxy/candidates-badge.svg)
 
 This is the package to add Collaborate support to the Unity Editor. Unlike its predecessor CollabProxy, this package has completely switched
@@ -10,19 +9,15 @@ The project is exclusively targeting .NetStandard 2.0 and will not work with the
 The minimum supported version of the Unity Editor is 2020.1a13.
 
 ## Development
-
 **For developers:**
 
 Option 1: clone this repository out into the `packages/` directory in a project.
 
 Option 2: clone elsewhere and link with the `packages/manifest.json` file in the project:
-
 ```
 "com.unity.collab-proxy": "file:/some/path/to/package"
 ```
-
 To add testing support also add the testibles section to the manifest. Your manifest should look like this:
-
 ```json
 {
   "dependencies": {
@@ -37,13 +32,10 @@ To add testing support also add the testibles section to the manifest. Your mani
 ```
 
 **For internal testers:** simply add the git url into the `packages/manifest.json` file:
-
 ```
 "com.unity.collab-proxy": "git://git@github.cds.internal.unity3d.com:unity/com.unity.cloud.collaborate.git"
 ```
-
 If you need a specific revisision:
-
 ```
 "com.unity.collab-proxy": "git://git@github.cds.internal.unity3d.com:unity/com.unity.cloud.collaborate.git#<rev>"
 ```
@@ -62,7 +54,6 @@ and the tests are in `Tests/`. The structure of the package follows the **MVP** 
 and interfaces.
 
 Here are some files and folders of note:
-
 ```none
 <root>
   ├── package.json
